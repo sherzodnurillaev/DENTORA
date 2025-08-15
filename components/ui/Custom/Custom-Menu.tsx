@@ -21,19 +21,19 @@ const Menu = ({ open, setOpen }: Props) => {
         {
             id: 1,
             title: "Главная",
-            link: "#",
+            link: "/",
             name: "/"
         },
         {
             id: 2,
             title: "Запись",
-            link: "#",
+            link: "/appointment",
             name: "appointment"
         },
         {
             id: 3,
             title: "О нас",
-            link: "#",
+            link: "/about",
             name: "about"
         },
         {

@@ -8,9 +8,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ru" suppressHydrationWarning>
       <body>
         <ThemeProvider defaultTheme='system' attribute="class" >
-          <div className="mx-[10px]">
+          <div className="mx-[10px] mb-[40px]">
             <Header />
-              <div className="max-w-[1260px] mx-auto mt-[20px] shadow-[0_4px_20px_rgba(158,158,158,0.5)] transition-colors duration-300 rounded-2xl px-[30px] py-[10px]">
+              <div className="max-w-[1260px] mx-auto mt-[20px] shadow-[0_4px_20px_rgba(158,158,158,0.5)] transition-colors duration-300 rounded-2xl px-[30px] py-[10px] mb-[20px]">
                 {children}
               </div>
               <Footer />

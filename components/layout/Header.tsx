@@ -5,6 +5,7 @@ import ThemeToggle from "../ui/ThemeToggle"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import Menu from "../ui/Custom/Custom-Menu"
+import Link from "next/link"
 
 export const Header = () => {
     const { theme } = useTheme()
@@ -29,7 +30,9 @@ export const Header = () => {
                  ${scrolled ? 'opacity-20 hover:opacity-100' : 'opacity-100'}`}
             >
                 <div className="flex items-center gap-3">
-                    <Image src={'/icon/logo.webp'} width={50} height={50} alt="logo" />
+                    <Link href={'/'} >
+                        <Image src={'/icon/logo.webp'} width={50} height={50} alt="logo" />
+                    </Link>
                     <h2 className="font-bold">DENTORA</h2>
                 </div>
                 <div className="flex items-center gap-5">
