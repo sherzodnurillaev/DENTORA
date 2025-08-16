@@ -61,7 +61,7 @@ const Services = () => {
                 {
                     data.map((item) => (
                         <div key={item.id} className="">
-                            <h2 className={`${theme == 'dark' ? 'text-[#9b8bca] duration-700' : 'text-[#4f4768] duration-700'} text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px]`}>{item.title}</h2>
+                            <h2 className={`${theme == 'dark' ? 'text-[#9b8bca] duration-700' : 'text-[#4f4768] duration-700'} font-bold text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px]`}>{item.title}</h2>
                             <p className={`max-w-[400px] text-[13px] md:text-[16px]`}>{item.description}</p>
                         </div>
                     ))

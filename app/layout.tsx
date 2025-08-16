@@ -2,6 +2,12 @@ import { ThemeProvider } from 'next-themes'
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Dentora – проект для портфолио",
+  description: "Демонстрационный сайт стоматологии, созданный для портфолио.",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
