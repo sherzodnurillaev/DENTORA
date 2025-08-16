@@ -56,7 +56,7 @@ const TelegramModal: React.FC<ModalProps> = ({ isOpen, onClose, defaultCategory 
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white dark:bg-[#2a2a2a] p-6 rounded-xl w-[90%] max-w-md">
+      <div className=" p-6 rounded-xl w-[90%] max-w-md">
         <h2 className="text-xl text-[#fff] font-semibold mb-4">Запись на приём</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input

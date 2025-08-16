@@ -57,7 +57,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-[800px] gap-[50px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-[800px] gap-[20px] md:gap-[30px] lg:gap-[50px]">
                 {
                     data.map((item) => (
                         <div key={item.id} className="">

@@ -15,7 +15,7 @@ interface Props {
 const Menu = ({ open, setOpen }: Props) => {
 
     const { theme } = useTheme()
-    const [page, setPage] = useState(usePathname())
+    const pathname = usePathname()
 
     const data = [
         {
@@ -28,26 +28,20 @@ const Menu = ({ open, setOpen }: Props) => {
             id: 2,
             title: "Запись",
             link: "/appointment",
-            name: "appointment"
+            name: "/appointment"
         },
         {
             id: 3,
             title: "О нас",
             link: "/about",
-            name: "about"
+            name: "/about"
         },
         {
             id: 4,
             title: "Вопросы и ответы",
-            link: "#",
-            name: "question"
-        },
-        {
-            id: 5,
-            title: "Контакты",
-            link: "#",
-            name: "contacts"
-        },
+            link: "/question",
+            name: "/question"
+        }
     ]
 
     return (
@@ -56,11 +50,11 @@ const Menu = ({ open, setOpen }: Props) => {
             <div className="flex flex-col gap-3 pt-[100px]">
                 {
                     data.map((item, i) => (
-                        <Link key={i} href={item.link} className={`${page == item.name ? 'text-blue-400' : ''}`}>{item.title}</Link>
+                        <Link key={i} href={item.link} className={`${pathname === item.link ? 'text-black bg-amber-50 w-fit mx-auto px-[10px] py-[3px] rounded-[6px] font-bold' : ''}`}>{item.title}</Link>
                     ))
                 }
             </div>
-            <div className="absolute bottom-[40px] left-1/2 -translate-x-1/2">
+            <div className="mt-[30px]">
                 <ThemeToggle />
             </div>
         </div>

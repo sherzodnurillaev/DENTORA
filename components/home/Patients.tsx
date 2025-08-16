@@ -37,7 +37,7 @@ const Patients = () => {
     ]
 
     return (
-        <div className="mt-[100px] duration-1000">
+        <div className="mt-[50px] lg:mt-[70px] duration-1000">
             <h2 className={`${theme == 'dark' ? 'text-white' : 'text-[#4f4768]'} font-bold text-[20px] sm:text-[24px] md:text-[30px] lg:text-[36px] mb-8`}>
                 Пациенты рекомендуют
             </h2>
@@ -51,7 +51,7 @@ const Patients = () => {
                         loop={true}
                         pagination={{ clickable: true }}
                         autoplay={{
-                            delay: 3000,
+                            delay: 5000,
                             disableOnInteraction: false,
                         }}
                         speed={1000}

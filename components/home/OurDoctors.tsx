@@ -41,8 +41,8 @@ const OurDoctors = () => {
     ]
 
     return (
-        <div className="mt-[100px]">
-            <h2 className={`${theme == 'dark' ? 'text-white duration-700' : 'text-[#4f4768] duration-700'} text-[20px] sm:text-[24px] md:text-[30px] lg:text-[36px] text-center mb-[50px] font-bold`} >Наши врачи</h2>
+        <div className="mt-[50px] md:mt-[70px] lg:mt-[100px]">
+            <h2 className={`${theme == 'dark' ? 'text-white duration-700' : 'text-[#4f4768] duration-700'} text-[20px] sm:text-[24px] md:text-[30px] lg:text-[36px] text-center mb-[20px] md:mb-[40px] font-bold`} >Наши врачи</h2>
             <div className="flex flex-col gap-[30px] md:flex-row md:justify-between md:gap-[10px] duration-1000">
                 {
                     doctors.map((item) => (

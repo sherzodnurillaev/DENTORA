@@ -17,7 +17,7 @@ const Footer = () => {
         if (!mounted) return null
 
     return (
-        <div className="max-w-[1300px] mx-auto mt-[10px] sticky top-0 z-50">
+        <div className="max-w-[1300px] mx-auto mt-[10px] sticky top-0 z-10">
             <div className="flex justify-between gap-y-[20px] gap-x-[5px] items-start w-full rounded-2xl px-[30px] py-[10px] shadow-[0_4px_20px_rgba(158,158,158,0.5)] transition-all duration-500">
                 <div className="flex flex-col md:flex-row gap-y-[30px] md:gap-[100px] lg:gap-[300px]">
                     <div className="">
