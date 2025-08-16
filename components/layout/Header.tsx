@@ -17,7 +17,7 @@ export const Header = () => {
         setMounted(true)
 
         const onScroll = () => {
-            setScrolled(window.scrollY > 10) // появится эффект после 10px
+            setScrolled(window.scrollY > 10)
         }
         window.addEventListener("scroll", onScroll)
         return () => window.removeEventListener("scroll", onScroll)

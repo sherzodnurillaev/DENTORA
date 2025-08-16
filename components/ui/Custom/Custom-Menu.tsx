@@ -3,7 +3,6 @@
 import { useTheme } from "next-themes"
 import ThemeToggle from "../ThemeToggle"
 import Link from "next/link"
-import { useState } from "react"
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 

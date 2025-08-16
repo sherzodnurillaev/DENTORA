@@ -17,7 +17,6 @@ const Records = () => {
     return (
         <div className="">
             <h2 className={`${theme == 'dark' ? 'text-white duration-700' : 'text-[#4f4768] duration-700'} max-w-[450px] text-[20px] sm:text-[24px] md:text-[30px] lg:text-[36px] mt-[10px] lg:mt-[30px] font-bold`}>Запишитесь на прием уже сегодня</h2>
-
             <Formic />
         </div>
     )
